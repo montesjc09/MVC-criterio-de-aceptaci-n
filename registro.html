@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Registro de Clientes</title>
+
+<style>
+
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background:#f2f2f2;
+}
+
+.contenedor{
+    width:400px;
+    margin:auto;
+    margin-top:50px;
+    background:white;
+    padding:20px;
+    border-radius:10px;
+}
+
+input,select,button{
+    width:100%;
+    padding:10px;
+    margin-top:10px;
+}
+
+</style>
+
+</head>
+<body>
+
+<div class="contenedor">
+
+<h2>Registro de Clientes</h2>
+
+<form id="formulario">
+
+<input
+type="text"
+id="nombre"
+placeholder="Nombre"
+required>
+
+<input
+type="text"
+id="apellido"
+placeholder="Apellido"
+required>
+
+<select id="rol">
+
+<option value="Administrador">Administrador</option>
+<option value="Cliente">Cliente</option>
+<option value="Empleado">Empleado</option>
+
+</select>
+
+<button type="submit">
+Registrar
+</button>
+
+</form>
+
+<p id="mensaje"></p>
+
+</div>
+
+<script type="module" src="controlador.js"></script>
+
+</body>
+</html>
